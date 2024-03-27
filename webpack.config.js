@@ -1,14 +1,12 @@
-import path from "path";
+const path = require("path");
 
-const config = {
+module.exports = {
   mode: "production",
   entry: "./app.js",
   output: {
-    path: "/dist",
+    path: path.join(__dirname, "dist"),
     publicPath: "/",
-    filename: "final.js",
+    filename: "index.js",
   },
   target: "node",
 };
-
-export default config;
