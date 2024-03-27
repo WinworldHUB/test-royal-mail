@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build": "webpack"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,5 +15,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
